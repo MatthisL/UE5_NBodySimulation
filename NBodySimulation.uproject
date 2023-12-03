@@ -17,11 +17,20 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "NBodySimShader",
+			"Enabled": true
+		},
+		{
+			"Name": "RenderDocPlugin",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
-		"Windows",
+		"Win64",
 		"LinuxArm64",
-		"Linux"
+		"Linux",
+		"HoloLens"
 	]
 }

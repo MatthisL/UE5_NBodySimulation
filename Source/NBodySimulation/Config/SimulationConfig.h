@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/BodyData.h"
 #include "UObject/Object.h"
 #include "SimulationConfig.generated.h"
 
@@ -18,11 +17,11 @@ struct FBodyConfigEntry
 
 	/** The spawn 2D position of this body in the simulation's screen. */
 	UPROPERTY(EditAnywhere)
-	FVector2D SpawnPosition;
+	FVector2f SpawnPosition;
 
 	/** The spawn 2D velocity of this body in the simulation's screen. */
 	UPROPERTY(EditAnywhere)
-	FVector2D SpawnVelocity;
+	FVector2f SpawnVelocity;
 };
 
 
@@ -41,7 +40,7 @@ public:
 
 	/** Bodies will be spawned with a random mass included within this range. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Body")
-	FVector2D InitialBodyMassRange = FVector2D(20.0f, 50.0f);
+	FVector2f InitialBodyMassRange = FVector2f(20.0f, 50.0f);
 	
 	/** Radius of the circle in which bodies will be spawn randomly. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Body")
@@ -49,7 +48,7 @@ public:
 
 	/** Bodies will be spawned with a random velocity included within this range. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Body")
-	FVector2D BodySpawnVelocityRange = FVector2D(400.0f, 600.0f);
+	FVector2f BodySpawnVelocityRange = FVector2f(400.0f, 600.0f);
 
 	/** You can add body manually with custom setup. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Body")
@@ -63,10 +62,6 @@ public:
 
 	
 	
-	/** The static mesh used for rendering the bodies in the simulation. */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Rendering")
-	TObjectPtr<UStaticMesh> BodyStaticMesh;
-
 	/** Scale rate of the rendered bodies' static mesh knowing that mesh already scale depending on the body's mass. */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Rendering")
 	float MeshScaling = 0.2f;

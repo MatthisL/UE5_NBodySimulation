@@ -1,0 +1,32 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "N-Body Simulation Shader",
+  "Description": "A plugin containing shaders for the N-Body Simulation.",
+  "Category": "",
+  "CreatedBy": "Matthis Le Texier",
+  "CreatedByURL": "https://github.com/MatthisL",
+  "MarketplaceURL": "",
+  "EngineVersion": "5.1",
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "Installed": false,
+  "EnabledByDefault": true,
+
+  "Modules": 
+  [
+    {
+      "Name": "NBodySim",
+      "Type": "Runtime",
+      "LoadingPhase": "PostConfigInit",
+      "WhitelistPlatforms": [ "Win64" ]
+    },
+    {
+      "Name": "BasePluginModule",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "WhitelistPlatforms": [ "Win64" ]
+    }
+  ]
+}
