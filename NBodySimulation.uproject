@@ -26,11 +26,5 @@
 			"Name": "RenderDocPlugin",
 			"Enabled": true
 		}
-	],
-	"TargetPlatforms": [
-		"Win64",
-		"LinuxArm64",
-		"Linux",
-		"HoloLens"
 	]
 }
