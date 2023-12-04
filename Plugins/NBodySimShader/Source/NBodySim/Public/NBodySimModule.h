@@ -40,7 +40,7 @@ public:
 
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded("ShaderDeclarationDemo");
+		return FModuleManager::Get().IsModuleLoaded("NBodySim");
 	}
 
 public:

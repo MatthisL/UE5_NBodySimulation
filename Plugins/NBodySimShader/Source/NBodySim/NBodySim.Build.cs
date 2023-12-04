@@ -11,9 +11,7 @@ namespace UnrealBuildTool.Rules
 			
 			PrivateIncludePaths.AddRange(new string[] 
 			{
-				"NBodySim/Private",
-				"../Shaders/Shared",
-				"../Shaders/Public"
+				"NBodySim/Private"
 			});
 
 			PrivateDependencyModuleNames.AddRange(new string[]

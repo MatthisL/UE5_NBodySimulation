@@ -1,9 +1,9 @@
 
 using UnrealBuildTool;
 
-public class BasePluginModule: ModuleRules
+public class BasePlugin: ModuleRules
 {
-	public BasePluginModule(ReadOnlyTargetRules Target) 
+	public BasePlugin(ReadOnlyTargetRules Target) 
 		: base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
@@ -12,10 +12,7 @@ public class BasePluginModule: ModuleRules
 		{ 
 			"Core", 
 			"CoreUObject", 
-			"Engine", 
-			"InputCore", 
-			"RHI",
-            "Slate"
+			"Engine"
 		});
 	}
 }

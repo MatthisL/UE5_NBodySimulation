@@ -10,8 +10,8 @@
   "MarketplaceURL": "",
   "EngineVersion": "5.1",
   "CanContainContent": true,
-  "IsBetaVersion": true,
-  "Installed": false,
+  "IsBetaVersion": false,
+  "Installed": true,
   "EnabledByDefault": true,
 
   "Modules": 
@@ -23,7 +23,7 @@
       "WhitelistPlatforms": [ "Win64" ]
     },
     {
-      "Name": "BasePluginModule",
+      "Name": "BasePlugin",
       "Type": "Runtime",
       "LoadingPhase": "Default",
       "WhitelistPlatforms": [ "Win64" ]
